@@ -1,0 +1,13 @@
+<h2>Nearest Stations</h2>
+
+<section class="stations">
+  <% station.each do |station| %>
+    <ul class="station">
+      <li class="name"><%= station.name %></li>
+      <li class="address"><%= station.address %></li>
+      <li class="fuel_types"><%= station.fuel_types %></li>
+      <li class="distance"><%= station.distance %></li>
+      <li class="access_times"><%= station.access_times %></li>
+    </ul>
+  <% end %>
+</section>
