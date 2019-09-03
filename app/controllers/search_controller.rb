@@ -13,6 +13,7 @@ class SearchController < ApplicationController
       req.params[:location] = zip
       req.params[:radius] = 6
       req.params[:fuel_type] = "ELEC, LPG"
+      req.params[:limit] = 10
       req.headers["x-api-key"] = ENV['nrel_api_key']
     end
     # parse json response
